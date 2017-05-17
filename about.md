@@ -4,6 +4,6 @@ title: About
 permalink: /about/
 ---
 
-I am freelance developer. Currently doing more in backend, focused in Python and Django.
+I'm a PKU graduate student. Currently doing more in backend, focused in Java and DL.
 
-email: agus[at]python.web.id
+E-mail: sconglee@163.com
