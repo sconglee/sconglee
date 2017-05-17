@@ -26,3 +26,4 @@ g = tf.Graph()
 with g.device('/gpu:0')
     result = a + b
 ```
+### TensorFlow数据模型——张量
