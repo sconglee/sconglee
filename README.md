@@ -4,7 +4,7 @@
 > and the search posts using [Super Search](https://github.com/chinchang/super-search)
 
 ### Demo
-* [https://agusmakmun.github.io](https://agusmakmun.github.io)
+* [https://sconglee.github.io](https://sconglee.github.io)
 
 #### Features
 
@@ -23,7 +23,7 @@
 
 #### Screenshot
 
-![Screenshot Post Page](https://raw.githubusercontent.com/agusmakmun/agusmakmun.github.io/master/static/img/screenshot-post-page.png  "Screenshot Post Page")
+![Screenshot Post Page](https://raw.githubusercontent.com/sconglee/sconglee.github.io/master/static/img/screenshot-post-page.png  "Screenshot Post Page")
 
 ### Install & Configuration
 
@@ -69,4 +69,4 @@ image: Broadcast_Mail.png             # (custom) image only for meta `property="
 
 ### Contributing
 
-Feel free to [open a bug](https://github.com/agusmakmun/agusmakmun.github.io/issues) or [contribute to code](https://github.com/agusmakmun/agusmakmun.github.io/pulls)!
+Feel free to [open a bug](https://github.com/sconglee/sconglee.github.io/issues) or [contribute to code](https://github.com/sconglee/sconglee.github.io/pulls)!
