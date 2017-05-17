@@ -2,8 +2,9 @@
 title: About me
 ---
 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Donec elementum ligula eu sapien consequat eleifend.
+A man who travels the world eating noodles, Currently doing more in backend, focused in Java and Deep-learning.
+Enthusiast performance, responsive design and usability, always looking for the best project and good coffee.
 
-Donec nec dolor erat, condimentum sagittis sem. Praesent porttitor porttitor risus, dapibus rutrum ipsum gravida et. Integer lectus nisi, facilisis sit amet eleifend nec, pharetra ut augue. Integer quam nunc, consequat nec egestas ac, volutpat ac nisi.
+A day without laughter is a day wasted.
 
 Find me on [GitHub](https://github.com/sconglee) or [Twitter](https://twitter.com/muanchiou).
