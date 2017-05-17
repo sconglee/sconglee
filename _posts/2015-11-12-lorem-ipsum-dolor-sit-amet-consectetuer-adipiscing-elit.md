@@ -1,13 +1,6 @@
 ---
-layout: post
-title: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit"
-description: "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec."
+title: Lorem ipsum dolor sit amet, consectetuer adipiscing elit
 date: 2015-11-12 16:41:50
-comments: true
-keywords: "welcome, Lorem, ipsum, dolor"
-category: welcome
-tags:
-- welcome
 ---
 
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.

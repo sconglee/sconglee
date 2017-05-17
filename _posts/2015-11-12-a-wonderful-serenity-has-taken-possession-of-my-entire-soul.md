@@ -1,14 +1,6 @@
 ---
-layout: post
-title: "A wonderful serenity has taken possession of my entire soul"
-description: "I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents."
+title: A wonderful serenity has taken possession of my entire soul
 date: 2015-11-12 16:39:18
-comments: true
-description: "A wonderful serenity has taken possession of my entire soul"
-keywords: "welcome, wonderful, jekyll, friend"
-category: welcome
-tags:
-- welcome
 ---
 
 A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine.
