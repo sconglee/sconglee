@@ -7,9 +7,9 @@ Instruction as follows. Lorem ipsum dolor sit amet, consectetur adipisicing elit
 
 ## Get started
 
-1. [Fork the repository](https://github.com/muan/scribble/fork)
+1. [Fork the repository](https://github.com/sconglee/sconglee.github.io/fork)
 
-2. Clone the repository: `git clone https://github.com/username/scribble`
+2. Clone the repository: `https://github.com/sconglee/sconglee.github.io.git`
 
 3. Run `bundle install`
 
@@ -29,11 +29,11 @@ Instruction as follows. Lorem ipsum dolor sit amet, consectetur adipisicing elit
 
 ---
 
-<a href="https://github.com/muan/scribble" class="pa3 tc ba br2 db">Get it on GitHub &hearts;</a>
+<a href="https://github.com/sconglee/sconglee.github.io" class="pa3 tc ba br2 db">Get it on GitHub &hearts;</a>
 
 ---
 
 ## The end
 
 Like it? [Tell me](http://twitter.com/muanchiou).<br/>
-Problem? [Use GitHub Issues](https://github.com/muan/scribble).
+Problem? [Use GitHub Issues](https://github.com/sconglee/sconglee.github.io).
