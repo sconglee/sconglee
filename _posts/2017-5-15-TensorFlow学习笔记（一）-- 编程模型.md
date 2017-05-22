@@ -1,5 +1,5 @@
 ---
-title: TensorFlow学习笔记（一）--编程模型
+title: TensorFlow学习笔记（一）-- 编程模型
 date: 2017-05-15 17:50:11
 ---
 TensorFlow中涉及到三种模型，计算模型、数据模型和运行模型，通过这三个角度对TensorFlow开始学习，可以对其工作原理有一个整体的理解。
