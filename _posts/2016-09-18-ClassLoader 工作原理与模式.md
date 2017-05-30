@@ -32,24 +32,5 @@ CustomClassLoader是用户自定义编写的，用来读取指定类文件
 1、装载
 
 2、链接：检查-->准备-->解析-->初始化
-```
-graph TD
-    A(装载)
-    A --> |Ps| F[查找和导入class文件]
-    A --> B(检查)
-    B --> |Ps| G[检查载入的class文件数据的正确性]
-    B --> C(准备)
-    C --> |Ps| H[给类的静态变量分配存储空间]
-    C --> D(解析)
-    D --> |Ps| I[将符号引用转成直接引用]
-    D --> E(初始化)
-    E --> |Ps| J[对静态变量,静态代码块执行初始化工作]
-```
-```flow
-    st=>start: 装载
-    e=>end: 初始化
-    op1=>operation: 检查
-    op2=>operation: 准备
-    op3=>opeartion: 解析
-    st->op1->op2->op3->e
-```
+
+![](http://i4.buimg.com/595056/7ece92f638ef9afd.png)
