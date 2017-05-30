@@ -45,3 +45,11 @@ graph TD
     D --> E(初始化)
     E --> |Ps| J[对静态变量,静态代码块执行初始化工作]
 ```
+```flow
+    st => start:装载
+    e => end: 初始化
+    op1 => operation: 检查
+    op2 => operation: 准备
+    op3 => opeartion: 解析
+    st -> op1 -> op2 -> op3 -> e
+```
