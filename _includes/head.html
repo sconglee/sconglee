@@ -38,3 +38,10 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 {% endif %}
+
+{% if page.math %}
+  {% include mathjax.html %}
+{% endif %}
+{% if site.google_analytics %}
+{% include google_analytics.html %}
+{% endif %}
