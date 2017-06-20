@@ -39,7 +39,7 @@ Sigmoid函数特性导致了反向传播算法收敛速度较慢，那么如何�
 
 那么使用了交叉熵函数就能解决Sigmoid收敛速度慢的问题么，我们看下使用交叉熵时，各层`$\phi^l $`的梯度情况：
 
-```math
+`$$
 \phi^l=\frac{\partial J(W,b,a^l,y)}{\partial z^l}
 
 =-y\frac{1}{a^l}(a^l)(1-a^l)+(1-y)\frac{1}{1-a^l}(a^l)(1-a^l)
@@ -47,7 +47,7 @@ Sigmoid函数特性导致了反向传播算法收敛速度较慢，那么如何�
 =-y(1-a^l)+(1-y)a^l
 
 =a^l-y
-```
+$$`
 可见此时`$\phi^l $`梯度表达式中已经没有`$\kappa'(z)$`，而均方误差损失函数的梯度是：
 
 `$\frac{\partial J(W,b,x,y)}{\partial z^L}=(a^L-y).\kappa'(z)$`
