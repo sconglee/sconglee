@@ -7,4 +7,4 @@ Enthusiast performance, responsive design and usability, always looking for the 
 
 A day without laughter is a day wasted.
 
-Find me on [GitHub](https://github.com/sconglee) or E-mail:sconglee@163.com.
+Find me by E-mail:sconglee@163.com.
