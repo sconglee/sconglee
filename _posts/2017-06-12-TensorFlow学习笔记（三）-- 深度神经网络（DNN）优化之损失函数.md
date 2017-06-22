@@ -1,5 +1,5 @@
 ---
-title: TensorFlow学习笔记（三）-- 神经网络优化之损失函数
+title: TensorFlow学习笔记（三）-- 深度神经网络（DNN）优化之损失函数
 date: 2017-06-12 20:50:52
 math: y
 ---

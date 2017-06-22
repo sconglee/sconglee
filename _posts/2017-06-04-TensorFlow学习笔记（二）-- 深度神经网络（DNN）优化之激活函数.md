@@ -1,5 +1,5 @@
 ---
-title: TensorFlow学习笔记（二）-- 神经网络优化之激活函数
+title: TensorFlow学习笔记（二）-- 深度神经网络（DNN）优化之激活函数
 date: 2017-06-04 22:46:52
 math: y
 ---
