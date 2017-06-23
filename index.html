@@ -13,9 +13,8 @@
 </ul>
 
   <!-- 分页链接 -->
-  <div class="pagination-wrapper"> 
   {% if paginator.total_pages > 1 %}
-<div class="pagination">
+<div class="pagination pagination-centered">
   {% if paginator.previous_page %}
     <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
   {% else %}
@@ -39,5 +38,5 @@
   {% endif %}
 </div>
 {% endif %}
-</div>
+
 
