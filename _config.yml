@@ -21,3 +21,6 @@ permalink:        /posts/:title
 defaults:
   - values:
       layout: "default"
+
+paginate:5
+paginatepath:['/index.html']
