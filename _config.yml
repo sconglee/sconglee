@@ -23,4 +23,4 @@ defaults:
       layout: "default"
 
 paginate: 5
-paginatepath: ['page:num']
+paginatepath: ['page/:num']
