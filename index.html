@@ -12,6 +12,7 @@
   {% endfor %}
 
   <!-- 分页链接 -->
+  <li class="mv2">
   {% if paginator.total_pages > 1 %}
 <div class="pagination">
   {% if paginator.previous_page %}
@@ -37,4 +38,5 @@
   {% endif %}
 </div>
 {% endif %}
+</li>
 </ul>
