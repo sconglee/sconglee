@@ -23,4 +23,4 @@ defaults:
       layout: "default"
 
 paginate: 5
-paginatepath: ['/index.html']
+paginatepath: ['page:num']
