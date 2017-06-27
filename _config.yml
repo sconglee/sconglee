@@ -22,6 +22,6 @@ defaults:
   - values:
       layout: "default"
 
-gems: [jekyll-paginate]
-paginate: 10
-paginate_path: "page:num"
+# gems: [jekyll-paginate]
+# paginate: 10
+# paginate_path: "page:num"
