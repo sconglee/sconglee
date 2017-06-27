@@ -223,7 +223,7 @@ $$\begin{cases}
 
 最后多说一句哈，大家可能感觉到很多知识和概念都是如此莫名，也就是说科学知识的体系和人类的认知规律经常不一致。比如说在物理学上，时间的定义先于速度，而我们却是先体会到物体运动的快慢，后面才产生时间的概念，皮亚杰的发生认识论就是讲这个问题的，大家可以去看看这位认知方面的祖师爷理论，你应该会更加体会到，神经网络是多么接近人类的认知模式。
 
-----
+***
 #### more information
 [How the backpropagation algorithm works](https://tigerneil.gitbooks.io/neural-networks-and-deep-learning-zh/content/chapter2.html)
 
