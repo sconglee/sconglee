@@ -12,14 +12,14 @@ $$minC(Y,G(X))=\left|G(x)-Y\right|^2=\sum_{i=1}^n(G(X_i)-y_i)^2$$
 
 其中G是我们的模型，它根据输入矩阵x输出一个预测向量G(x)，这个损失函数的直观意义相当明确：预测值G(x)和真实值Y的距离越大、损失也就越大，反而就越小。它的求导过程也是相当平凡的：
 
- $$\frac{\partial C}{\partial w}=2\sum_{i=1}^n(G(x_i)-y_i)\frac{\partial G(x_i)}{\partial w}$$
+ $$\dfrac{\partial C}{\partial w}=2\sum_{i=1}^n(G(x_i)-y_i)\dfrac{\partial G(x_i)}{\partial w}$$
 
 其中w是模型G中的一个待训练的参数，由于MSE比较简单、所以我们能够从一般意义上来讨论它，事实上损失函数的选择通常都是结合激活函数的，下面将讨论几种使用较多的组合方式。
 
 #### 均方误差损失函数+Sigmoid激活函数
 Sigmoid激活函数的表达式为：
 
-$$\kappa(z)=\frac{1}{1+e^{-z}}$$ 
+$$\kappa(z)=\dfrac{1}{1+e^{-z}}$$ 
 
  $\kappa(z)$ 的函数图像如下：
 
@@ -38,15 +38,15 @@ $$J(W,b,a,y)=-y.lna-(1-y).ln(1-a)$$
 其中.为向量内积。
 
 那么使用了交叉熵函数就能解决Sigmoid收敛速度慢的问题么，我们看下使用交叉熵时，各层 $\phi^l $ 的梯度情况：
- $\phi^l=\frac{\partial J(W,b,a^l,y)}{\partial z^l}
-=-y\frac{1}{a^l}(a^l)(1-a^l)+(1-y)\frac{1}{1-a^l}(a^l)(1-a^l)
+ $\phi^l=\dfrac{\partial J(W,b,a^l,y)}{\partial z^l}
+=-y\dfrac{1}{a^l}(a^l)(1-a^l)+(1-y)\dfrac{1}{1-a^l}(a^l)(1-a^l)
 =-y(1-a^l)+(1-y)a^l
 =a^l-y
 $ 
 
 可见此时 $\phi^l $ 梯度表达式中已经没有 $\kappa'(z)$ ，而均方误差损失函数的梯度是：
 
-$$\frac{\partial J(W,b,x,y)}{\partial z^L}=(a^L-y).\kappa'(z)$$
+$$\dfrac{\partial J(W,b,x,y)}{\partial z^L}=(a^L-y).\kappa'(z)$$
 
 对比两者在L层的梯度表达式，就可以看出，使用交叉熵得到梯度表达式没有了 $\kappa'(z)$ ，梯度为预测值和真实值得差距，因此避免了反向传播收敛速度慢的问题。
 
@@ -59,7 +59,7 @@ $$\frac{\partial J(W,b,x,y)}{\partial z^L}=(a^L-y).\kappa'(z)$$
 
 DNN分类模型要求是输出层神经元输出的值在0到1之间，同时所有输出值之和为1。很明显，现有的普通DNN是无法满足这个要求的。但是我们只需要对现有的全连接DNN稍作改良，即可用于解决分类问题。在现有的DNN模型中，我们可以将输出层第i个神经元的激活函数定义为如下形式：
 
-$$a_i^L=\frac{e^{z_i^L}}{\sum_{j=1}^{n_L}e^{z_j^L}}$$
+$$a_i^L=\dfrac{e^{z_i^L}}{\sum_{j=1}^{n_L}e^{z_j^L}}$$
 
 其中， $n_L$ 是输出层第L层的神经元个数，也即我们分类问题的类别数。很容易看出，所有的 $a_i^L$ 都是在（0,1）之间的数字，而 $\sum_{j=1}^{n_L}e^{z_j^L}$ 作为归一化因子保证了所有的 $a_i^L$ 之和为1。
 
@@ -83,13 +83,13 @@ $$J(W,b,a^L,y)=-lna_i^L$$
 
 可见损失函数只和真实类别对应的输出有关，这样假设真实类别是第i类，则其他不属于第i类序号对应的神经元的梯度导数直接为0。对于真实类别第i类，它的 $W_i^L$ 对应的梯度计算为：
 
-$$\frac{\partial J(W,b,a^L,y)}{\partial W_i^L}=\frac{\partial J(W,b,a^L,y)}{\partial a_i^L}\frac{\partial a_i^L}{\partial z_i^L}\frac{\partial z_i^L}{\partial w_i^L}
+$$\dfrac{\partial J(W,b,a^L,y)}{\partial W_i^L}=\dfrac{\partial J(W,b,a^L,y)}{\partial a_i^L}\dfrac{\partial a_i^L}{\partial z_i^L}\dfrac{\partial z_i^L}{\partial w_i^L}
 
 =(a_i^L-1)a_i^{L-1}$$
 
 同样的可以得到 $b_i^L$ 的梯度表达式为：
 
-$$\frac{\partial J(W,b,a^L,y)}{\partial b_i^L}=a_i^L-1$$
+$$\dfrac{\partial J(W,b,a^L,y)}{\partial b_i^L}=a_i^L-1$$
 
 可见，梯度计算也很简洁，也没有第一节说的训练速度慢的问题。举个例子，假如我们对于第2类的训练样本，通过前向算法计算的未激活输出为（1,5,3），则我们得到softmax激活后的概率输出为：(0.015,0.866,0.117)。由于我们的类别是第二类，则反向传播的梯度应该为：(0.015,0.866-1,0.117)。是不是很简单尼？
 
