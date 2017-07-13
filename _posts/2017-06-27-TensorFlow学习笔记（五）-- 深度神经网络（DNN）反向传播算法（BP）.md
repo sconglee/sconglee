@@ -85,8 +85,8 @@ $$Z_1=\left[
      \right]
     =\left[
      \begin{matrix}
-     w_{31}*x_1 & w_{32}*x_2 \\
-     w_{41}*x_1 & w_{42}*x_2
+     w_{31}*x_1 + w_{32}*x_2 \\
+     w_{41}*x_1 + w_{42}*x_2
      \end{matrix}
      \right]
     =\left[
@@ -163,7 +163,7 @@ $$C=\dfrac{1}{2}(0.690-0.5)^2=0.01805$$
 $$\begin{cases}
   Z_2=W_{53}*y_3+W_{54}*y_4 \\
   y_2=f(Z_2) \\
-  C=\dfrac{1}{2}(y_2-y_{out}) 
+  C=\dfrac{1}{2}(y_2-y_{out})^2 
   \end{cases}$$
 
 这个时候我们需要求出$C$对$W$的偏导，则根据链式法则有：
@@ -193,7 +193,7 @@ $$\begin{cases}
   Z_3=W_{31}*x_1+W_{32}*x_2 \\
   y_3=f(Z_3) \\
   Z_5=W_{53}*y_3+W_{54}*y_4 \\
-  y_5=f(Z_5)
+  y_5=f(Z_5) \\
   C=\dfrac{1}{2}(y_5-y_{out})^2
   \end{cases}$$
 
@@ -209,9 +209,9 @@ $$\dfrac{\partial C}{\partial W_{31}}=\dfrac{\partial C}{\partial y_5}*\dfrac{\p
 
 $$\begin{cases}
   W_{31}=W_{31}-\dfrac{\partial C}{\partial W_{31}}=0.09661944 \\
-  W_{31}=W_{31}-\dfrac{\partial C}{\partial W_{31}}=0.78985831 \\
-  W_{31}=W_{31}-\dfrac{\partial C}{\partial W_{31}}=0.39661944 \\
-  W_{31}=W_{31}-\dfrac{\partial C}{\partial W_{31}}=0.58985831 
+  W_{32}=W_{32}-\dfrac{\partial C}{\partial W_{32}}=0.78985831 \\
+  W_{41}=W_{41}-\dfrac{\partial C}{\partial W_{41}}=0.39661944 \\
+  W_{42}=W_{42}-\dfrac{\partial C}{\partial W_{42}}=0.58985831 
   \end{cases}$$
   
   再按照这个权重参数进行一遍正向传播得出的Error为0.0165，这个值比原来的0.01805要小，则继续迭代，不断修正权值，使得代价函数越来越小，预测值也不段逼近0.5，直到最后得到无限逼近真实值对应的权值。
