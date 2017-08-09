@@ -59,3 +59,37 @@ value = sess.run(preValue, feed_dict={x:testPicArr})
 print "index is: " , value, "The prediction value is:", num_to_char(value)
 ```
 tips：Tensorflow是一个编程系统，仅仅使用图来表示计算任务，图中的每个节点有0或多个tensor，多个节点组成的图描述了计算的过程，为了进行计算，该图必须在会话里启动，从而返回对应的值类型。
+
+##### 3. tf.nn.conv2d()中参数padding_method的使用
+
+这里引用Stack Overflow中的一个解释：
+
+SAME：means that the output feature map has the same spatial dimensions as the input feature map. Zero padding is introduced to make the shapes match as needed, equally on every side of the input map.
+
+VALID: means no padding.
+
+追踪源码至tensorflow/tensorflow/python/ops/nn_ops.py
+```python
+def convolution(input, filter, padding, strides=None, dilation_rate=None, 
+                           name=None, data_format=None):
+                           
+    Args:
+      padding: A string, either `"VALID"` or `"SAME"`. The padding algorithm.
+      dilation_rate: Optional, Specifies the filter upsampling/input downsampling rate.
+     
+    Returns:
+        If padding == "SAME":
+            output_spatial_shape[i] = ceil(input_spatial_shape[i] / strides[i])
+        If padding == "VALID":
+            output_spatial_shape[i] =ceil((input_spatial_shape[i] -
+              (spatial_filter_shape[i]-1) * dilation_rate[i]) / strides[i]).
+```
+整理下就是，对于“VALID”，输出的形状计算如下：
+
+$$new\_shape_{i}=\lceil\dfrac{(W_{i}-F_{i}+1)}{S_{i}}\rceil$$
+
+对于“SAME”，输出的形状计算如下：
+
+$$new\_shape_{i}=\lceil\dfrac{W_{i}}{S_{i}}\rceil$$
+
+其中，$i$是对应的维度，$W$为输入的size，$F$是filter的size，$S$是步长，$\lceil\rceil$是向上取整符号。
