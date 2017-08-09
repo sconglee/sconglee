@@ -75,7 +75,7 @@ def convolution(input, filter, padding, strides=None, dilation_rate=None,
                            
     Args:
       padding: A string, either `"VALID"` or `"SAME"`. The padding algorithm.
-      dilation_rate: Optional, Specifies the filter upsampling/input downsampling rate.
+      dilation_rate: Optional, Specifies the filter upsampling/input downsampling rate, usually dilation_rate=1.
      
     Returns:
         If padding == "SAME":
