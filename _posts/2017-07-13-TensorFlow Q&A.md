@@ -60,7 +60,7 @@ print "index is: " , value, "The prediction value is:", num_to_char(value)
 ```
 tips：Tensorflow是一个编程系统，仅仅使用图来表示计算任务，图中的每个节点有0或多个tensor，多个节点组成的图描述了计算的过程，为了进行计算，该图必须在会话里启动，从而返回对应的值类型。
 
-##### 3. tf.nn.conv2d()中参数padding_method的使用
+#### 3. tf.nn.conv2d()中参数padding_method的使用
 
 这里引用Stack Overflow中的一个解释：
 
