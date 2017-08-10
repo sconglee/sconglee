@@ -1,5 +1,5 @@
 ---
-title: 卷积神经网络（CNN）反向传播算法
+title: TensorFlow学习笔记（六）-- 卷积神经网络（CNN）反向传播算法
 date: 2017-08-03 20:40:52
 math: y
 ---
