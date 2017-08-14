@@ -93,3 +93,11 @@ $$new\_shape_{i}=\lceil\dfrac{(W_{i}-F_{i}+1)}{S_{i}}\rceil$$
 $$new\_shape_{i}=\lceil\dfrac{W_{i}}{S_{i}}\rceil$$
 
 其中，$i$是对应的维度，$W$为输入的size，$F$是filter的size，$S$是步长，$\lceil\rceil$是向上取整符号。
+
+#### 4. softmax_cross_entropy_with_logits和sparse_softmax_cross_entropy_with_logits的区别
+
+官方给出的解释还是简单明了的
+
+- For sparse_softmax_cross_entropy_with_logits, labels must have the shape [batch_size] and the dtype int32 or int64. Each label is an int in range [0, num_classes-1].
+- For softmax_cross_entropy_with_logits, labels must have the shape [batch_size, num_classes] and dtype float32 or float64.
+- Labels used in softmax_cross_entropy_with_logits are the one hot version of labels used in sparse_softmax_cross_entropy_with_logits.
