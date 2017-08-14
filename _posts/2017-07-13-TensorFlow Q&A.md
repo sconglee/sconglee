@@ -101,3 +101,5 @@ $$new\_shape_{i}=\lceil\dfrac{W_{i}}{S_{i}}\rceil$$
 - For sparse_softmax_cross_entropy_with_logits, labels must have the shape [batch_size] and the dtype int32 or int64. Each label is an int in range [0, num_classes-1].
 - For softmax_cross_entropy_with_logits, labels must have the shape [batch_size, num_classes] and dtype float32 or float64.
 - Labels used in softmax_cross_entropy_with_logits are the one hot version of labels used in sparse_softmax_cross_entropy_with_logits.
+
+两个函数返回值是一样的，但都不是一个数，而是一个向量，如果要求loss，则要做一步tf.reduce_mean()操作，即对向量求均值。
