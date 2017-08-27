@@ -9,7 +9,7 @@ math: y
 后来作者利用该种模型的变体参与了ILSVRC-2012（ImageNet Large Scale Visual Recognition Challenge）比赛，以Top-5错误率15.3%遥遥领先亚军的26.2%。最后文章发表于NIPS 2012（Neural Information Processing Systems），目的是Hinton与其学生为了回应别人对于deep learning的质疑而将deep learning用于ImageNet（图像识别目前最大的数据库）上。
 
 #### 网络结构
-![网络结构](images/figures/2017-08-08-01.jpg)
+![网络结构](/images/figures/2017-08-08-01.jpg)
 
 该神经网络包含60M参数和650K神经元，用5个卷积层（其中某些层与亚采样层连接）、三个全连接层（包括一个1K门的输出层）。为使训练更快，文章采用非饱和神经元，并利用了一个高效的GPU应用进行卷积运算。在全连接层中，为避免过拟合，文章采用了一种叫做“dropout”的方法。
 
