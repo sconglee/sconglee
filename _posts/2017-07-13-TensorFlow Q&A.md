@@ -31,7 +31,7 @@ def train():
     coord.join(threads)
 ```
 
-![error1](http://i1.buimg.com/595056/c30e0a6fa1f568ef.png)
+![error1](/images/figures/2017-07-13-01.png)
 
 报错意思是被feed进的值不能是一个张量，而应该是Python scalars，strings， lists， 或是arrays中的一种，定位问题出现在倒数第三行的print语句的tf.cast(tf.arg_max(mnist.test.labels, 1), tf.int32)，该值是个tensor，可以改为以下的方式注入参数：
 
@@ -48,7 +48,7 @@ tips：Tensorflow的数据供给机制允许在运算图中将数据注入到任
 preValue = num_to_char(tf.arg_max(tf.nn.softmax(y), 1))
 print "The prediction value is:", sess.run(preValue, feed_dict={x:testPicArr})
 ```
-![error2](http://i1.buimg.com/595056/1240aaaefea64000.png)
+![error2](/images/figures/2017-07-13-02.png)
 
 可以看到报错提示是无效的参数类型，该处run()中的preValue应该是一个tensor。而且num_to_char(tf.arg_max(tf.nn.softmax(y), 1))也不是一个有效的值，因为tf.arg_max(tf.nn.softmax(y), 1)也是tensor，没有在session中run之前，它仅仅是一个计算图的节点符号，没有实际值的意义，所以num_to_char()返回的是None。可以做如下修改
 

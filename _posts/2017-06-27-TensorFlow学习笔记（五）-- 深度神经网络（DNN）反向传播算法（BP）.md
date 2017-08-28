@@ -27,7 +27,7 @@ math: y
 
 对应的网络如下：
 
-![神经网络](http://i4.piimg.com/595056/bb2fa853f940a3d0.png)
+![神经网络](/images/figures/2017-06-27-01.png)
 
  $$X=Z_0=\left[
          \begin{matrix}
