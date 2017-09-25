@@ -33,4 +33,4 @@ CustomClassLoader是用户自定义编写的，用来读取指定类文件
 
 2、链接：检查-->准备-->解析-->初始化
 
-![](http://i4.buimg.com/595056/7ece92f638ef9afd.png)
+![加载过程](/images/figures/2016-08-10-01.png)
