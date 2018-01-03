@@ -3,7 +3,7 @@ title: ImageNet Classification with Deep Convolutional Neural Networks 笔记
 date: 2017-08-08 16:35:52
 math: y
 ---
-#### 论文介绍
+#### 论文介
 本文训练了一个深度卷积神经网络（下文称CNNs）来将ILSVRC-2010中1.2M（注：本文中M和K均代表 百万/千 个数量）的高分辨率图像（注：ImageNet目前共包含大约22000类，15兆左右的标定图像，ILSVRC-2010为其中一个常用的数据集）数据分为1000类。测试结果，Top-1和Top-5的错误率分别为37.5%和17%，优于当时最优的水平。
 
 后来作者利用该种模型的变体参与了ILSVRC-2012（ImageNet Large Scale Visual Recognition Challenge）比赛，以Top-5错误率15.3%遥遥领先亚军的26.2%。最后文章发表于NIPS 2012（Neural Information Processing Systems），目的是Hinton与其学生为了回应别人对于deep learning的质疑而将deep learning用于ImageNet（图像识别目前最大的数据库）上。
