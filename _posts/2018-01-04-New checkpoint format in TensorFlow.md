@@ -16,7 +16,7 @@ old format(v1) | new format(v2)
 :--:|:--:|:--:
 model-1000.ckpt|model-1000.index
 model-1000.meta|model-1000.meta
-| |model-1000.data|
+| |model-1000.data
 
 有些时候我们要使用旧版本的模型，该怎么办尼，查看[Saver API](https://www.tensorflow.org/api_docs/python/tf/train/Saver)可以得知tf.train.Saver 的定义如下：
 
